@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS class 16 NOV</title>
+    <style>
+        input{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- divide -->
+     
+    <H1>DIVIDE</H1>
+
+    <input type="number" name="" id="v1"><br><br>
+    <input type="number" name="" id="v2">
+
+    <button onclick="div()" >Divide</button>
+
+    <h1 id="a"></h1>
+
+    <!-- //multiply -->
+
+    <H1>MULTIPLY</H1>
+
+    <input type="number" name="" id="v3"><br><br>
+    <input type="number" name="" id="v4">
+
+    <button onclick="div1()" >Multiply</button>
+
+    <h1 id="a1"></h1>
+
+    <!-- //Sub -->
+
+    <H1>SUB</H1>
+
+    <input type="number" name="" id="v5"><br><br>
+    <input type="number" name="" id="v6">
+
+    <button onclick="div2()" >Multiply</button>
+
+    <h1 id="a2"></h1>
+
+     <!-- //ADD -->
+
+     <H1>ADD</H1>
+
+     <input type="number" name="" id="v7"><br><br>
+     <input type="number" name="" id="v8">
+ 
+     <button onclick="div3()" >Multiply</button>
+ 
+     <h1 id="a3"></h1>
+
+    <script>
+
+             //divide -->
+
+        function div(){
+            
+            let valueone = document.getElementById('v1').value
+            let valuetwo = document.getElementById('v2').value
+
+           let ans = valueone / valuetwo
+           document.getElementById('a').innerHTML = ans
+        }
+
+            //multiply -->
+
+        function div1(){
+            
+            let valueone = document.getElementById('v3').value
+            let valuetwo = document.getElementById('v4').value
+
+           let ans = valueone * valuetwo
+           document.getElementById('a1').innerHTML = ans
+        }
+
+        //SUB -->
+
+        function div2(){
+            
+            let valueone = document.getElementById('v5').value
+            let valuetwo = document.getElementById('v6').value
+
+           let ans = valueone * valuetwo
+           document.getElementById('a2').innerHTML = ans
+        }
+
+        //ADD -->
+
+        function div3(){
+            
+            let valueone = document.getElementById('v7').value
+            let valuetwo = document.getElementById('v8').value
+
+           let ans = valueone * valuetwo
+           document.getElementById('a3').innerHTML = ans
+        }
+
+    </script>    
+</body>
+</html>

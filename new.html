@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 16 NOV</title>
+</head>
+<body>
+    <!-- calculate -->
+    <h1>Calculate</h1>
+
+    <input type="text" name="" id="v1">
+    
+    <select name="" id="option">
+        <option value="/">/</option>
+        <option value="*">*</option>
+        <option value="-">-</option>
+        <option value="+">+</option>
+    </select>
+
+    <input type="text" name="" id="v2">
+
+    <button onclick="cal()" >calculate</button>
+
+    <h1 id="a"></h1>
+
+
+    <script>
+
+        function cal(){
+            
+            let valueone = document.getElementById('v1').value
+            let valuetwo = document.getElementById('v2').value
+            let c = document.getElementById('option').value
+
+           if ( c == '/'){
+            var z = valueone / valuetwo
+           }
+
+           if ( c == '*'){
+            var z = valueone * valuetwo
+           }
+
+           if ( c == '-'){
+            var z = valueone - valuetwo
+           }
+
+           if ( c == '+'){
+            var z = parseInt(valueone) + parseInt(valuetwo)
+           }
+           document.getElementById('a').innerHTML = z
+        }
+
+    </script>
+</body>
+</html>
